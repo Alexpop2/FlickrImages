@@ -1,0 +1,42 @@
+import Foundation
+
+class {{ prefix }}{{ module_info.name }}Presenter {
+    private var presenterOutput: {{ prefix }}{{ module_info.name }}PresenterOutput!
+    private weak var view: {{ prefix }}{{ module_info.name }}ViewInput!
+    private var interactor: {{ prefix }}{{ module_info.name }}InteractorInput!
+}
+
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}PresenterInput {
+    var output: {{ prefix }}{{ module_info.name }}PresenterOutput {
+        get {
+            return presenterOutput
+        }
+        set {
+            presenterOutput = newValue
+        }
+    }
+    
+    var viewInput: {{ prefix }}{{ module_info.name }}ViewInput {
+        get {
+            return view
+        }
+        set {
+            view = newValue
+        }
+    }
+    
+    var interactorInput: {{ prefix }}{{ module_info.name }}InteractorInput {
+        get {
+            return interactor
+        }
+        set {
+            interactor = newValue
+        }
+    }
+    
+    
+}
+
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}InteractorOutput {
+
+}

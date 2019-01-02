@@ -1,0 +1,16 @@
+import Foundation
+
+class {{ prefix }}{{ module_info.name }}Interactor {
+    private var interactorOutput: {{ prefix }}{{ module_info.name }}InteractorOutput!
+}
+
+extension {{ prefix }}{{ module_info.name }}Interactor: {{ prefix }}{{ module_info.name }}InteractorInput {
+    var output: {{ prefix }}{{ module_info.name }}InteractorOutput {
+        get {
+            return interactorOutput
+        }
+        set {
+            interactorOutput = newValue
+        }
+    }
+}

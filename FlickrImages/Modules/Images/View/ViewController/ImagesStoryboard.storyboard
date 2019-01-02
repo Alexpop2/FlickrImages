@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="8Kw-TB-LkT">
+            <objects>
+                <navigationController storyboardIdentifier="kImagesNavigationControllerIdentifier" id="hJG-hJ-uLE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="g96-1V-mBy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OUr-0X-whb" kind="relationship" relationship="rootViewController" id="OT6-to-IDs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKX-4Y-h4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="39"/>
+        </scene>
+        <!--Flickr-->
+        <scene sceneID="Qfj-CZ-RFx">
+            <objects>
+                <viewController id="OUr-0X-whb" customClass="ImagesViewController" customModule="FlickrImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zBU-tW-roI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LHX-y3-KtF">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LHX-y3-KtF" firstAttribute="leading" secondItem="vhf-J9-kLn" secondAttribute="leading" id="bWh-8e-7cb"/>
+                            <constraint firstItem="vhf-J9-kLn" firstAttribute="bottom" secondItem="LHX-y3-KtF" secondAttribute="bottom" id="lQ0-zq-a9b"/>
+                            <constraint firstItem="LHX-y3-KtF" firstAttribute="top" secondItem="vhf-J9-kLn" secondAttribute="top" id="mAb-Tj-kYT"/>
+                            <constraint firstItem="vhf-J9-kLn" firstAttribute="trailing" secondItem="LHX-y3-KtF" secondAttribute="trailing" id="qYa-eK-jGf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vhf-J9-kLn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flickr" id="X6I-sv-EWV"/>
+                    <connections>
+                        <outlet property="tableView" destination="LHX-y3-KtF" id="g9R-Jc-fJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0N-jh-oMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="38"/>
+        </scene>
+    </scenes>
+</document>

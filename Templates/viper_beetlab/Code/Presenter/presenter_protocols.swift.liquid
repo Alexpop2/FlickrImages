@@ -1,0 +1,10 @@
+import Foundation
+
+protocol {{ prefix }}{{ module_info.name }}PresenterInput: class {
+    var output: {{ prefix }}{{ module_info.name }}PresenterOutput { get set }
+    var viewInput: {{ prefix }}{{ module_info.name }}ViewInput { get set }
+    var interactorInput: {{ prefix }}{{ module_info.name }}InteractorInput { get set }
+}
+
+protocol {{ prefix }}{{ module_info.name }}PresenterOutput: class {
+}

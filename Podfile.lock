@@ -1,0 +1,20 @@
+PODS:
+  - InitialsImageView (0.4.0)
+  - Kingfisher (5.0.1)
+
+DEPENDENCIES:
+  - InitialsImageView (= 0.4.0)
+  - Kingfisher (= 5.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InitialsImageView
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  InitialsImageView: bea137b6281b3a82ccef09327986ec78a1a0da37
+  Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
+
+PODFILE CHECKSUM: f0f915026573e32687d5c0737d48c86e39861c48
+
+COCOAPODS: 1.5.3
